@@ -43,7 +43,63 @@ Until here, the first commit
 Create needed folders, inside E2E
 
 1. config
+    |-> json_payloads
+        |-> multiple_users.json
+        |-> no_users.json
+        |-> single_user.json
+        |-> six_users.json
+    |-> mappings
+        |-> common.json
+        |-> create_contact.json
+        |-> home.json
+        |-> playground.json
+    |-> emails.json
+    |-> errors.json
+    |-> hosts.json
+    |-> mocks.json
+    |-> pages.json
+
 2. dist
+    |-> env
+        |-> global.js
+        |-> parseEnv.js
+    |-> logger
+        |-> index.js
+    |-> reporter
+        |-> cucumber-report.js
+    |-> step-definitions        
+        |-> assertions          (maybe more are needed)
+            |-> verify-element-value.js
+            |-> verify-element-visibility.js
+            |-> verify-table-value.js
+        |-> setup
+            |-> hooks.js
+            |-> world.js
+
+        (maybe more .js files are needed at this level)
+        |-> accesibility.js
+        |-> check-js
+        |-> click.js
+        |-> general.js
+        |-> navigation.js
+        |-> page.js
+        |-> scroll.js
+
+    |-> support
+        |-> browser-behaviour.js
+        |-> error-helper.js
+        |-> html-behavior.js
+        |-> input-helper.js
+        |-> mock-behavior.js
+        |-> navigation-behavior.js
+        |-> options-helper.js
+        |-> random-data-helper.js
+        |-> tag-helper.js
+        |-> wait-for-behavior.js
+        |-> web-element-helper.js
+
+    |-> index.js
+
 3. env
 4. reports
 5. src
