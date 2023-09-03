@@ -36,3 +36,15 @@ Contains all assertion libraries
 
 12. yarn add cucumber-html-reporter
 
+
+Until here, the first commit
+------------------------------------
+
+Create needed folders, inside E2E
+
+1. config
+2. dist
+3. env
+4. reports
+5. src
+
