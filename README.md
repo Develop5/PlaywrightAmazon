@@ -143,3 +143,10 @@ Settings (left down icon) And then open settings.json (right upper icon)
     "cucumberautocomplete.steps": ["./e2e/src/step-definition/**/*.ts"],
     "cucumberautocomplete.syncfeatures": "test/features/*.feature"
 }
+
+------------------------------------
+
+## Execute tests:
+
+    yarn run test
+
