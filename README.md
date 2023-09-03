@@ -41,7 +41,6 @@ Contains all assertion libraries
 14. Accessibility (still from e2e):
         yarn add axe-playwright -D
         yarn add axe-html-reporter -D
-        yarn add exe-playwright -D
 
 
 Until here, the first commit
