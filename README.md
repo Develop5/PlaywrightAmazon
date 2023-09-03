@@ -151,13 +151,18 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
 ## Execute tests:
 
+And now tests can be executed through this command: 
+    ./run_tests.sh localhost dev       (or production and regression or smoke)          
+            or
+    ./run_tests.bat localhost dev             
+Depending whether you are in Linux or Windows. (Both work for me)
+
+
+## Some issues that come up when running
 "babel-node" no se reconoce como un comando interno o externo 
     npm install -g babel-cli
 
 Then, 
 Couldn't find preset "@babel/preset-typescript"
-
-
-
     yarn run test
 

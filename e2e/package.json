@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .ts",
-    "test": "rimraf dist && npx playwright test --reporter=html",
-    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
     "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
-    "cucumber": "npm run transpile && cucumber-js",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber": "yarn transpile &&  cucumber-js",
+    "cucumber:localhost": "yarn cucumber",
+    "cucumber:production": "yarn cucumber",
+    "comment_postcucumber": "ts-node ./src/reporter/cucumber-report.ts",
     "postcucumber": "ts-node ./src/reporter/cucumber-report.ts"
   },
   "keywords": [],

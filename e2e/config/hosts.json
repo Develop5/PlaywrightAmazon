@@ -1,0 +1,6 @@
+{
+    "comment": "As for Amazon, we have the same for production and localhost",
+    "localhost" : "https://www.amazon.es/",
+    "production" : "https://www.amazon.es/",
+    "api" : "https://jsonplaceholder.typicode.com/"
+}
