@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber": "yarn transpile &&  cucumber-js",
+    "cucumber:localhost": "yarn cucumber",
+    "cucumber:production": "yarn cucumber",
+    "comment_postcucumber": "ts-node ./src/reporter/cucumber-report.ts",
+    "postcucumber": "ts-node ./src/reporter/cucumber-report.ts"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
