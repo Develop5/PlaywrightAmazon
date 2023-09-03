@@ -36,6 +36,13 @@ Contains all assertion libraries
 
 12. yarn add cucumber-html-reporter
 
+13. yarn add faker -D
+
+14. Accessibility (still from e2e):
+        yarn add axe-playwright -D
+        yarn add axe-html-reporter -D
+        yarn add exe-playwright -D
+
 
 Until here, the first commit
 ------------------------------------

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
@@ -13,7 +12,6 @@
     "comment_postcucumber": "ts-node ./src/reporter/cucumber-report.ts",
     "postcucumber": "ts-node ./src/reporter/cucumber-report.ts"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -22,7 +20,10 @@
     "@babel/preset-env": "^7.22.14",
     "@cucumber/cucumber": "^9.4.0",
     "@playwright/test": "^1.37.1",
+    "axe-html-reporter": "^2.2.3",
+    "axe-playwright": "^1.2.3",
     "dotenv": "^16.3.1",
+    "faker": "^6.6.6",
     "playwright": "^1.37.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
