@@ -128,3 +128,11 @@ Create needed folders, inside E2E
 
 6. allpush.sh
 
+
+## Project editor
+Settings (left down icon) And then open settings.json (right upper icon)  
+
+{
+    "cucumberautocomplete.steps": ["./e2e/src/step-definition/**/*.ts"],
+    "cucumberautocomplete.syncfeatures": "test/features/*.feature"
+}
