@@ -65,46 +65,7 @@ Create needed folders, inside E2E
     |-> mocks.json
     |-> pages.json
 
-2. dist
-    |-> env
-        |-> global.js
-        |-> parseEnv.js
-    |-> logger
-        |-> index.js
-    |-> reporter
-        |-> cucumber-report.js
-    |-> step-definitions        
-        |-> assertions          (maybe more are needed)
-            |-> verify-element-value.js
-            |-> verify-element-visibility.js
-            |-> verify-table-value.js
-        |-> setup
-            |-> hooks.js
-            |-> world.js
-
-        (maybe more .js files are needed at this level)
-        |-> accessibility.js
-        |-> check.js
-        |-> click.js
-        |-> general.js
-        |-> navigation.js
-        |-> page.js
-        |-> scroll.js
-
-    |-> support
-        |-> browser-behaviour.js
-        |-> error-helper.js
-        |-> html-behavior.js
-        |-> input-helper.js
-        |-> mock-behavior.js
-        |-> navigation-behavior.js
-        |-> options-helper.js
-        |-> random-data-helper.js
-        |-> tag-helper.js
-        |-> wait-for-behavior.js
-        |-> web-element-helper.js
-
-    |-> index.js
+2. dist                     (No hace falta meter nada aquí dentro, porque los fuentes son ficheros .ts en el oro src)
 
 3. env
     |-> common.env
@@ -131,6 +92,46 @@ Create needed folders, inside E2E
 5. src
     |-> run_tests.bat
     |-> run_tests.sh
+    |-> env
+        |-> global.ts
+        |-> parseEnv.ts
+    |-> logger
+        |-> index.ts
+    |-> reporter
+        |-> cucumber-report.ts
+    |-> step-definitions        
+        |-> assertions          (maybe more are needed)
+            |-> verify-element-value.ts
+            |-> verify-element-visibility.ts
+            |-> verify-table-value.ts
+        |-> setup
+            |-> hooks.ts
+            |-> world.ts
+
+        (maybe more .ts files are needed at this level)
+        |-> accessibility.ts
+        |-> check.ts
+        |-> click.ts
+        |-> general.ts
+        |-> navigation.ts
+        |-> page.ts
+        |-> scroll.ts
+
+    |-> support
+        |-> browser-behaviour.ts
+        |-> error-helper.ts
+        |-> html-behavior.ts
+        |-> input-helper.ts
+        |-> mock-behavior.ts
+        |-> navigation-behavior.ts
+        |-> options-helper.ts
+        |-> random-data-helper.ts
+        |-> tag-helper.ts
+        |-> wait-for-behavior.ts
+        |-> web-element-helper.ts
+
+    |-> index.ts
+
 
 6. allpush.sh
 
