@@ -28,9 +28,12 @@ Contains all assertion libraries
 
 8. yarn add ts-node -D
 
-9. yarn add @babel/cli -D
+9. Babel:
 
-10. yarn add @babel/preset-env -D
+    npm install @babel/core
+    npm install @babel/cli
+    npm install @babel/preset-env
+    npm install @babel/preset-typescript
 
 11. yarn add dotenv -D
 
@@ -147,6 +150,14 @@ Settings (left down icon) And then open settings.json (right upper icon)
 ------------------------------------
 
 ## Execute tests:
+
+"babel-node" no se reconoce como un comando interno o externo 
+    npm install -g babel-cli
+
+Then, 
+Couldn't find preset "@babel/preset-typescript"
+
+
 
     yarn run test
 
