@@ -77,8 +77,8 @@ Create needed folders, inside E2E
             |-> world.js
 
         (maybe more .js files are needed at this level)
-        |-> accesibility.js
-        |-> check-js
+        |-> accessibility.js
+        |-> check.js
         |-> click.js
         |-> general.js
         |-> navigation.js
@@ -101,6 +101,30 @@ Create needed folders, inside E2E
     |-> index.js
 
 3. env
-4. reports
+    |-> common.env
+    |-> localhost.env
+    |-> production.env
+
+4. reports          (Only folders are needed)
+                    (No need to be filled up, as these are results of tests)
+    |-> accessibility
+        |-> create contact accessibility_report.html
+        |-> create contact accessibility_report.html
+        |-> home accessibility_report.html
+        |-> playground accessibility_report.html
+    |-> screenshots
+        |-> After_4654.png
+        |-> As a user I can interact and assert on checkboxes.png
+    |-> videos
+        |-> As a uer I can interact and assert on new windows
+            |-> 04fe5c490af004ed5bfd2d417f40138d.webm
+
+    |-> cucumber-html-report.html
+    |-> report.json
+
 5. src
+    |-> run_tests.bat
+    |-> run_tests.sh
+
+6. allpush.sh
 
