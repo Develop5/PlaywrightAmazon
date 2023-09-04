@@ -152,7 +152,7 @@ Settings (left down icon) And then open settings.json (right upper icon)
 ## Execute tests:
 
 And now tests can be executed through this command: 
-    ./run_tests.sh localhost dev       (or production and regression or smoke)          
+    ./run_tests.sh localhost dev       (or production, and regression or smoke)          
             or
     ./run_tests.bat localhost dev             
 Depending whether you are in Linux or Windows. (Both work for me)
