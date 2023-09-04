@@ -4,99 +4,23 @@
     "elements": [
       {
         "description": "",
-        "id": "as-a-user-i-can-interact-with-cards;as-a-user-i-can-interact-and-assert-on-cards",
+        "id": "as-a-user-i-can-interact-with-cards;as-a-user-i-can-see-the-main-page",
         "keyword": "Scenario",
         "line": 6,
-        "name": "As a user I can interact and assert on cards",
+        "name": "As a user I can see the main page",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
             "name": "I am on the \"home\" page",
+            "match": {
+              "location": "src\\step-definitions\\navigation.ts:16"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I click the \"playground\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I am directed to the \"playground\" page",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "the \"card header\" should contain the text \"Word of the Day\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"card main\" should contain the text \"Automation\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"card type\" should contain the text \"noun\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the \"card overview\" should contain the text \"Automate the execution of tests\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"card overview\" should contain the text \"\"compares actual with expected\"\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"card action\" should contain the text \"Learn More\"",
-            "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 14003700,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'page')\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:20:23)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:17:12)"
             }
           }
         ],
