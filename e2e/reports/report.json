@@ -10,6 +10,14 @@
         "name": "As a user I can see the main page",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1041746899
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
@@ -18,9 +26,16 @@
               "location": "src\\step-definitions\\navigation.ts:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 14003700,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'page')\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:20:23)\n    at C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:8:71\n    at __awaiter (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:4:12)\n    at ScenarioWorld.<anonymous> (C:\\Users\\lourd\\Documents\\Lenovo_D\\Lourdes\\practicando\\PlaywrightAmazon\\e2e\\src\\step-definitions\\navigation.ts:17:12)"
+              "status": "passed",
+              "duration": 712682399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 175420400
             }
           }
         ],
