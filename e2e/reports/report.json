@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1041746899
+              "duration": 5247931999
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 7,
             "name": "I am on the \"home\" page",
             "match": {
-              "location": "src\\step-definitions\\navigation.ts:16"
+              "location": "src\\step-definitions\\navigation.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 712682399
+              "duration": 587240200
             }
           },
           {
@@ -35,7 +35,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 175420400
+              "duration": 132470699
             }
           }
         ],

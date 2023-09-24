@@ -147,11 +147,12 @@ Settings (left down icon) And then open settings.json (right upper icon)
     "cucumberautocomplete.syncfeatures": "test/features/*.feature"
 }
 
+
 ------------------------------------
 
 ## Execute tests:
 
-And now tests can be executed through this command: 
+Tests can be executed through this command from e2e folder: 
     ./run_tests.sh localhost dev       (or production, and regression or smoke)          
             or
     ./run_tests.bat localhost dev             
