@@ -1,4 +1,4 @@
-import { Given } from '@cucumber/cucumber'
+import { Given, When, Then } from '@cucumber/cucumber'
 import { PageId } from '../env/global'
 import { 
     navigateToPage,
@@ -24,6 +24,7 @@ Given(
             target: pageId,
             type: 'page'
         })
+        
     }
 )
 
