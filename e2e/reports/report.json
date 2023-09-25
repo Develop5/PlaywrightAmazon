@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 973107299
+              "duration": 929845100
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 574108800
+              "duration": 7426413300
             }
           },
           {
@@ -35,7 +35,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168738799
+              "duration": 254507800
             }
           }
         ],

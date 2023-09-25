@@ -147,6 +147,13 @@ Settings (left down icon) And then open settings.json (right upper icon)
     "cucumberautocomplete.syncfeatures": "test/features/*.feature"
 }
 
+### How to pause tests
+
+        await page.pause()
+
+
+
+
 
 ------------------------------------
 
