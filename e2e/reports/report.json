@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 929845100
+              "duration": 958304100
             }
           },
           {
@@ -27,7 +27,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7426413300
+              "duration": 2695375900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the \"logo\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50070700
             }
           },
           {
@@ -35,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 254507800
+              "duration": 193581900
             }
           }
         ],

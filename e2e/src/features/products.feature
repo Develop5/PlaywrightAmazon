@@ -5,7 +5,7 @@ Feature: As a user I can interact with cards
     @dev
     Scenario: As a user I can see the main page
         Given I am on the "home" page
-        #And the "logo" should be displayed
+        And the "logo" should be displayed
         #And I click the "playground" button
         #When I am directed to the "playground" page
         #And the "card header" should contain the text "Word of the Day"

@@ -27,9 +27,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             type: 'page'
           });
         case 6:
-          _context.next = 8;
-          return page.pause();
-        case 8:
         case "end":
           return _context.stop();
       }
