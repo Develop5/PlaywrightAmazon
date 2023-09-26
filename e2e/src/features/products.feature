@@ -18,6 +18,8 @@ Feature: As a user I can interact with cards
         And the "3rd" "category title" should contain the text "Learn"
 
         And the "1st" "chapter" should be displayed
-        And the "1st" "chapter" should contain the text "4"
+        And the "1st" "chapter" should contain the text "49"
+
+
 
         

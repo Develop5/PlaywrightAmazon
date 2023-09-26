@@ -157,6 +157,8 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
     Locators in array:      $('[class="big-number chapter"]')[0]
 
+    Add emojis:         Windows + .
+
 
 
 ### List of elements

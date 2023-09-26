@@ -318,38 +318,40 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             return _regeneratorRuntime().wrap(function _callee11$(_context11) {
               while (1) switch (_context11.prev = _context11.next) {
                 case 0:
-                  _context11.next = 2;
+                  // Lourdes
+                  console.log('>>>>>>>>>  I AM HERE  <<<<<<<<<<<<<');
+                  _context11.next = 3;
                   return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
-                case 2:
+                case 3:
                   elementStable = _context11.sent;
                   if (!elementStable) {
-                    _context11.next = 14;
+                    _context11.next = 15;
                     break;
                   }
-                  _context11.next = 6;
+                  _context11.next = 7;
                   return (0, _htmlBehavior.getElementTextAtIndex)(page, elementIdentifier, index);
-                case 6:
+                case 7:
                   elementText = _context11.sent;
                   if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate)) {
-                    _context11.next = 11;
+                    _context11.next = 12;
                     break;
                   }
                   return _context11.abrupt("return", _waitForBehavior.waitForResult.PASS);
-                case 11:
-                  return _context11.abrupt("return", _waitForBehavior.waitForResult.FAIL);
                 case 12:
-                  _context11.next = 15;
+                  return _context11.abrupt("return", _waitForBehavior.waitForResult.FAIL);
+                case 13:
+                  _context11.next = 16;
                   break;
-                case 14:
-                  return _context11.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
                 case 15:
+                  return _context11.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
+                case 16:
                 case "end":
                   return _context11.stop();
               }
             }, _callee11);
           })), globalConfig, {
             target: elementKey,
-            failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText, " \uD83E\uDDE8 ")
+            failureMessage: "\u2103 \uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText, " \uD83E\uDDE8 ")
           });
         case 6:
         case "end":

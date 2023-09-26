@@ -197,6 +197,9 @@ Then(
 
         await waitFor( async() => {
 
+            // Lourdes
+            console.log('>>>>>>>>>  I AM HERE  <<<<<<<<<<<<<')
+
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if (elementStable) {
@@ -213,7 +216,7 @@ Then(
         globalConfig,
             {
                 target: elementKey, 
-                failureMessage: `🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
+                failureMessage: `  \u2103   🧨 Expected ${elementKey} to ${negate?'not ':''}contain the text ${expectedElementText} 🧨 ` 
             }
         )
     }
@@ -241,6 +244,7 @@ Then(
                     return waitForResult.PASS
                 } else {
                     return waitForResult.FAIL
+
                 }
             } else {
                 return waitForResult.ELEMENT_NOT_AVAILABLE
