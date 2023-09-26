@@ -155,6 +155,8 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
     Print URL:          console.log('>>>>>>> Page URL: ' + page.url())
 
+    Locators in array:      $('[class="big-number chapter"]')[0]
+
 
 
 ### List of elements

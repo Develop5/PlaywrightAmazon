@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 992595600
+              "duration": 1067089800
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2134092099
+              "duration": 1926674799
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 90364000
+              "duration": 53995700
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 946046299
+              "duration": 495098300
             }
           },
           {
@@ -66,33 +66,111 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2735100
+              "duration": 2727899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 11,
-            "name": "the \"category title\" should be displayed",
+            "name": "the \"1st\" \"category title\" should be displayed",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 2242484799
+              "duration": 2306314799
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "the \"category title\" should contain the text \"Featured\"",
+            "name": "the \"1st\" \"category title\" should contain the text \"Featured\"",
             "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:19"
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
             },
             "result": {
               "status": "passed",
-              "duration": 71954399
+              "duration": 41611000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the \"2nd\" \"category title\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12884700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the \"2nd\" \"category title\" should contain the text \"Interview\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23827299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the \"3rd\" \"category title\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8345400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the \"3rd\" \"category title\" should contain the text \"Learn\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14081699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the \"1st\" \"chapter\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6795599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the \"1st\" \"chapter\" should contain the text \"4\"",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13543999
             }
           },
           {
@@ -100,7 +178,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 266823000
+              "duration": 265456900
             }
           }
         ],

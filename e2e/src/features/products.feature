@@ -8,14 +8,16 @@ Feature: As a user I can interact with cards
         And the "logo" should be displayed
         And I click the "Get Started" button
         Then I am directed to the "explore" page
-        And the "category title" should be displayed
-        And the "category title" should contain the text "Featured"
+        And the "1st" "category title" should be displayed
+        And the "1st" "category title" should contain the text "Featured"
 
-        And 
+        And the "2nd" "category title" should be displayed
+        And the "2nd" "category title" should contain the text "Interview"
 
-        #And the "card main" should contain the text "Automation"
-        #And the "card type" should contain the text "noun"
-        #And the "card overview" should contain the text "Automate the execution of tests"
-        #And the "card overview" should contain the text ""compares actual with expected""
-        #And the "card action" should contain the text "Learn More"
+        And the "3rd" "category title" should be displayed
+        And the "3rd" "category title" should contain the text "Learn"
+
+        And the "1st" "chapter" should be displayed
+        And the "1st" "chapter" should contain the text "4"
+
         
