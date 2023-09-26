@@ -19,16 +19,15 @@ Then(
             globalConfig,
         } = this;
 
-        // >>>>>>>>>> Lourdes
-        console.log('elementKey= ', elementKey.toString)
-
         
         logger.log(`the ${elementKey} should ${negate?'not ':''} be displayed`)
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+
         await waitFor(async () => {
             const isElementVisible = await getElement(page, elementIdentifier) != null
             if (isElementVisible === !negate) {
                 return waitForResult.PASS
+
             } else {
                 return waitForResult.ELEMENT_NOT_AVAILABLE
             }

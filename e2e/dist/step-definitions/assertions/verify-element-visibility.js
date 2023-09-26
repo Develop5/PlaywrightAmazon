@@ -15,11 +15,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          page = this.screen.page, globalConfig = this.globalConfig; // >>>>>>>>>> Lourdes
-          console.log('elementKey= ', elementKey.toString);
+          page = this.screen.page, globalConfig = this.globalConfig;
           _logger.logger.log("the ".concat(elementKey, " should ").concat(negate ? 'not ' : '', " be displayed"));
           elementIdentifier = (0, _webElementHelper.getElementLocator)(page, elementKey, globalConfig);
-          _context2.next = 6;
+          _context2.next = 5;
           return (0, _waitForBehavior.waitFor)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
             var isElementVisible;
             return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -46,7 +45,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             target: elementKey,
             failureMessage: "\uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "be displayed \uD83E\uDDE8 ")
           });
-        case 6:
+        case 5:
         case "end":
           return _context2.stop();
       }

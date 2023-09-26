@@ -148,9 +148,22 @@ Settings (left down icon) And then open settings.json (right upper icon)
 }
 
 ### How to pause tests
-
         await page.pause()
 
+### Resources
+    Duplicate line:     Shift + Alt + Arrow down (Arrow up)
+
+    Print URL:          console.log('>>>>>>> Page URL: ' + page.url())
+
+
+
+### List of elements
+```
+var tags = document.getElementsByTagName("div");
+for (var i=0, max=tags.length; i < max; i++) {
+   console.log(tags[i]);
+}
+```
 
 
 

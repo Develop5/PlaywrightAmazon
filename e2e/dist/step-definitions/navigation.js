@@ -42,16 +42,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
+          // Lourdes
+          console.log('>>>>>>> Hello, I am here  <<<<<<<<<<');
           page = this.screen.page, globalConfig = this.globalConfig;
           _logger.logger.log("I am directed to the ".concat(pageId, " page"));
-          _context2.next = 4;
+          _context2.next = 5;
           return (0, _waitForBehavior.waitFor)(function () {
             return (0, _navigationBehavior.currentPathMatchesPageId)(page, pageId, globalConfig);
           }, globalConfig, {
             target: pageId,
             type: 'page'
           });
-        case 4:
+        case 5:
+          // Lourdes
+          console.log('>>>>>>> Page URL: ' + page.url());
+        case 6:
         case "end":
           return _context2.stop();
       }

@@ -6,8 +6,8 @@ Feature: As a user I can interact with cards
     Scenario: As a user I can see the main page
         Given I am on the "home" page
         And the "logo" should be displayed
-        #And I click the "playground" button
-        #When I am directed to the "playground" page
+        And I click the "Get Started" button
+        When I am directed to the "explore" page
         #And the "card header" should contain the text "Word of the Day"
         #And the "card main" should contain the text "Automation"
         #And the "card type" should contain the text "noun"

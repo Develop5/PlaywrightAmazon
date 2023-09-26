@@ -2,5 +2,7 @@
     "comment"  : "Here, real locators from home page need to be defined",
     "contacts header" : "[data-id='contacts']",
     "create" : "[data-id='add-button']",
-    "logo" : "[class='logo']"
+    "logo" : "[class='logo']",
+    "Get Started" : "[id='explore']"
+
 }

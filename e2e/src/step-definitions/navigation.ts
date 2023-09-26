@@ -18,8 +18,6 @@ Given(
             globalConfig,
         } = this;
         logger.log(`I am on the ${pageId} page`)
-
-
         await navigateToPage(page, pageId, globalConfig)
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig), globalConfig, {
             target: pageId,
@@ -34,6 +32,11 @@ Given(
 Given(
     /^I am directed to the "([^"]*)" page$/,
     async function (pageId: PageId) {
+
+        // Lourdes
+        console.log('>>>>>>> Hello, I am here  <<<<<<<<<<')
+
+
         const {
             screen: { page },
             globalConfig,
@@ -44,6 +47,9 @@ Given(
             target: pageId,
             type: 'page'
         })
+
+        // Lourdes
+        console.log('>>>>>>> Page URL: ' + page.url())
 
     }
 )

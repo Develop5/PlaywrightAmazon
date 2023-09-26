@@ -43,6 +43,9 @@ var pathMatchesPageId = function pathMatchesPageId(path, pageId, _ref3) {
 var currentPathMatchesPageId = function currentPathMatchesPageId(page, pageId, globalConfig) {
   var _URL = new URL(page.url()),
     currentPath = _URL.pathname;
+
+  // Lourdes
+  console.log('>>>>>>> Inside navitagion-behavior: ' + currentPath);
   if (pathMatchesPageId(currentPath, pageId, globalConfig)) {
     return _waitForBehavior.waitForResult.PASS;
   }
