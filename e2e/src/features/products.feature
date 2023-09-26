@@ -8,9 +8,8 @@ Feature: As a user I can interact with cards
         And the "logo" should be displayed
         And I click the "Get Started" button
         Then I am directed to the "explore" page
-        
-        #And the "card header" should contain the text "Word of the Day"
-
+        And the "category title" should be displayed
+        And the "category title" should contain the text "Featured"
 
         #And the "card main" should contain the text "Automation"
         #And the "card type" should contain the text "noun"
