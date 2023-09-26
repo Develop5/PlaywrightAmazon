@@ -11,6 +11,8 @@ Feature: As a user I can interact with cards
         And the "category title" should be displayed
         And the "category title" should contain the text "Featured"
 
+        And 
+
         #And the "card main" should contain the text "Automation"
         #And the "card type" should contain the text "noun"
         #And the "card overview" should contain the text "Automate the execution of tests"
