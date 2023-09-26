@@ -37,10 +37,6 @@ export const currentPathMatchesPageId = (
 
     const {pathname: currentPath} = new URL(page.url())
 
-    // Lourdes
-    console.log('>>>>>>> Inside navitagion-behavior: ' + currentPath )
-
-
     if (pathMatchesPageId(currentPath, pageId, globalConfig)) {
         return waitForResult.PASS
     }

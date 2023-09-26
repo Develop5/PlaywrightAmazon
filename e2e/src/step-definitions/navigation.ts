@@ -24,19 +24,12 @@ Given(
             type: 'page'
         })
         
-
-        
     }
 )
 
 Given(
     /^I am directed to the "([^"]*)" page$/,
     async function (pageId: PageId) {
-
-        // Lourdes
-        console.log('>>>>>>> Hello, I am here  <<<<<<<<<<')
-
-
         const {
             screen: { page },
             globalConfig,
@@ -48,8 +41,6 @@ Given(
             type: 'page'
         })
 
-        // Lourdes
-        console.log('>>>>>>> Page URL: ' + page.url())
 
     }
 )

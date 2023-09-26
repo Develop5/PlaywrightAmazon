@@ -3,6 +3,6 @@
     "contacts header" : "[data-id='contacts']",
     "create" : "[data-id='add-button']",
     "logo" : "[class='logo']",
-    "Get Started" : "[id='explore']"
+    "Get Started" : "p[class='link']"
 
 }
