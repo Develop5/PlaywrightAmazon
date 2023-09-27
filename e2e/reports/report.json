@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1955245099
+              "duration": 895194299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9868971200
+              "duration": 847105499
             }
           },
           {
@@ -40,7 +40,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 99890300
+              "duration": 107671099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"search\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15303100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the \"search\" icon",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304372499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"id header\" should be displayed",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9700799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I fill in the \"id header\" input with \"Zapatos\"",
+            "match": {
+              "location": "src\\step-definitions\\forms.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160372199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the \"id header\" icon",
+            "match": {
+              "location": "src\\step-definitions\\click.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123195799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I wait \"10\" seconds",
+            "match": {
+              "location": "src\\step-definitions\\general.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10007401700
             }
           },
           {
@@ -48,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 198475499
+              "duration": 186603299
             }
           }
         ],

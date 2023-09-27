@@ -197,9 +197,6 @@ Then(
 
         await waitFor( async() => {
 
-            // Lourdes
-            console.log('>>>>>>>>>  I AM HERE  <<<<<<<<<<<<<')
-
             const elementStable = await waitForSelector(page, elementIdentifier)
 
             if (elementStable) {

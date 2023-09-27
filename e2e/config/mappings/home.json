@@ -1,5 +1,7 @@
 {
     "comment"  : "Here, real locators from home page need to be defined",
-    "logo" : "[id='Layer_1']"
+    "logo" : "[id='Layer_1']",
+    "search": "[class='S3xARh']",
+    "id header": "[id='header-search-input']"
 
 }

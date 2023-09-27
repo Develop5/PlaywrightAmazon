@@ -318,33 +318,31 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             return _regeneratorRuntime().wrap(function _callee11$(_context11) {
               while (1) switch (_context11.prev = _context11.next) {
                 case 0:
-                  // Lourdes
-                  console.log('>>>>>>>>>  I AM HERE  <<<<<<<<<<<<<');
-                  _context11.next = 3;
+                  _context11.next = 2;
                   return (0, _waitForBehavior.waitForSelector)(page, elementIdentifier);
-                case 3:
+                case 2:
                   elementStable = _context11.sent;
                   if (!elementStable) {
-                    _context11.next = 15;
+                    _context11.next = 14;
                     break;
                   }
-                  _context11.next = 7;
+                  _context11.next = 6;
                   return (0, _htmlBehavior.getElementTextAtIndex)(page, elementIdentifier, index);
-                case 7:
+                case 6:
                   elementText = _context11.sent;
                   if (!((elementText === null || elementText === void 0 ? void 0 : elementText.includes(expectedElementText)) === !negate)) {
-                    _context11.next = 12;
+                    _context11.next = 11;
                     break;
                   }
                   return _context11.abrupt("return", _waitForBehavior.waitForResult.PASS);
-                case 12:
+                case 11:
                   return _context11.abrupt("return", _waitForBehavior.waitForResult.FAIL);
-                case 13:
-                  _context11.next = 16;
+                case 12:
+                  _context11.next = 15;
                   break;
-                case 15:
+                case 14:
                   return _context11.abrupt("return", _waitForBehavior.waitForResult.ELEMENT_NOT_AVAILABLE);
-                case 16:
+                case 15:
                 case "end":
                   return _context11.stop();
               }
