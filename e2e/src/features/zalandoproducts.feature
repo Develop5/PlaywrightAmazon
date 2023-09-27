@@ -2,9 +2,8 @@ Feature: As a user I can interact with cards
 
     @smoke
     @regression
-    @dev
     Scenario: As a user I can see the main page
-        Given I am on the "home" page
+        Given I am on the "zalando_home" page
         And the "logo" should be displayed
         And I click the "Get Started" button
         Then I am directed to the "explore" page
@@ -23,3 +22,7 @@ Feature: As a user I can interact with cards
 
 
         
+    @smoke
+    @regression
+    Scenario: As a user I can see the main page
+        Given I am on the "zalando_home" page

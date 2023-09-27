@@ -351,7 +351,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             }, _callee11);
           })), globalConfig, {
             target: elementKey,
-            failureMessage: "\u2103 \uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText, " \uD83E\uDDE8 ")
+            failureMessage: "  \u2103   \uD83E\uDDE8 Expected ".concat(elementKey, " to ").concat(negate ? 'not ' : '', "contain the text ").concat(expectedElementText, " \uD83E\uDDE8 ")
           });
         case 6:
         case "end":

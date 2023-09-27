@@ -1,9 +1,9 @@
 {
-    "home": {
+    "leetcode_home": {
         "route" : "/",
         "regex" : "^/$"
     },
-    "explore": {
+    "leetcode_explore": {
         "route" : "/explore",
         "regex" : "^/explore"
     }

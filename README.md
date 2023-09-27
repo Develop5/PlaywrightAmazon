@@ -159,6 +159,15 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
     Add emojis:         Windows + .
 
+    In VS Code Integrated Terminal, type command: chcp 65001
+
+    In settings > Terminal, I had this Terminal › External: Windows Exec
+Customizes which terminal to run on Windows.
+    C:\WINDOWS\System32\cmd.exe
+
+    Now changed to:
+    C:\Program Files\Git\git-bash.exe
+
 
 
 ### List of elements
