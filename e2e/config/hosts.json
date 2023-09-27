@@ -1,7 +1,8 @@
 {
     "comment": "We will have the same for production and localhost",
-    "localhost" : "https://leetcode.com/",
-    "comment_localhost" : "https://www.zalando.es/",
+    "comment_localhost" : "https://leetcode.com/",
+    
+    "localhost" : "https://www.zalando.es/",
     "production" : "https://www.zalando.es/",
     "api" : "https://jsonplaceholder.typicode.com/"
 }

@@ -2,7 +2,6 @@ Feature: As a user I can interact with cards
 
     @smoke
     @regression
-    @dev
     Scenario: As a user I can see the main page
         Given I am on the "leetcode_home" page
         And the "logo" should be displayed

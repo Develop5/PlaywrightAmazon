@@ -14,20 +14,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 896151699
+              "duration": 1955245099
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I am on the \"leetcode_home\" page",
+            "name": "I am on the \"home\" page",
             "match": {
               "location": "src\\step-definitions\\navigation.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 2356439999
+              "duration": 9868971200
             }
           },
           {
@@ -40,137 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 49478699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I click the \"Get Started\" button",
-            "match": {
-              "location": "src\\step-definitions\\click.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 351150700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I am directed to the \"leetcode_explore\" page",
-            "match": {
-              "location": "src\\step-definitions\\navigation.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1633499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the \"1st\" \"category title\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2253976799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "the \"1st\" \"category title\" should contain the text \"Featured\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 29484599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "the \"2nd\" \"category title\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8441999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "the \"2nd\" \"category title\" should contain the text \"Interview\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12927600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "the \"3rd\" \"category title\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10600099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "the \"3rd\" \"category title\" should contain the text \"Learn\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 20486299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "the \"1st\" \"chapter\" should be displayed",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-visibility.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7115400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "the \"1st\" \"chapter\" should contain the text \"4\"",
-            "match": {
-              "location": "src\\step-definitions\\assertions\\verify-element-value.ts:186"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12659100
+              "duration": 99890300
             }
           },
           {
@@ -178,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 217675499
+              "duration": 198475499
             }
           }
         ],
@@ -204,6 +74,6 @@
     "keyword": "Feature",
     "name": "As a user I can interact with cards",
     "tags": [],
-    "uri": "src\\features\\leetcode.feature"
+    "uri": "src\\features\\zalandoproducts.feature"
   }
 ]

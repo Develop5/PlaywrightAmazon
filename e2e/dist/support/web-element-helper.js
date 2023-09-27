@@ -10,6 +10,11 @@ var getElementLocator = function getElementLocator(page, elementKey, globalConfi
   var pageElementMappings = globalConfig.pageElementMappings;
   var currentPage = (0, _navigationBehavior.getCurrentPageId)(page, globalConfig);
   var elementIdentifier = ((_pageElementMappings$ = pageElementMappings[currentPage]) === null || _pageElementMappings$ === void 0 ? void 0 : _pageElementMappings$[elementKey]) || ((_pageElementMappings$2 = pageElementMappings.common) === null || _pageElementMappings$2 === void 0 ? void 0 : _pageElementMappings$2[elementKey]);
+
+  // Lourdes
+  debugger;
+  console.log('>>>>>>> Lourdes >>>>>> elementIdentifier: ' + elementIdentifier);
+  page.pause();
   if (!elementIdentifier) {
     // Show emoticons in the message
     throw Error("\uD83E\uDDE8  Unable to find the ".concat(elementKey, " mapping \uD83E\uDDE8 "));
