@@ -10,9 +10,8 @@ Feature: As a user I can interact with cards
         And I click the "search" icon
         And the "id header" should be displayed
         And I fill in the "id header" input with "Zapatos"
-        And I click the "id header" icon
-        And I press Enter
-        #And I wait "10" seconds
+        And I press Enter on "id header" element
+        And I wait "10" seconds
 
         #Then I am directed to the "explore" page
         #And the "1st" "category title" should be displayed

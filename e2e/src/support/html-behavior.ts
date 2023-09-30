@@ -17,6 +17,7 @@ export const clickElementAtIndex = async (
     await element?.click()
 }
 
+
 export const inputElementValue = async (
     page: Page,
     elementIdentifier: ElementLocator,
@@ -219,3 +220,13 @@ export const elementChecked = async(
     return checked
 }
 
+export const pressEnter = async (
+    page: Page,
+    elementIdentifier: ElementLocator,
+    elementPosition: number
+): Promise< void > => {
+    const element = await page.$(`${elementIdentifier}`)
+    await page.focus(elementIdentifier)
+    await element?.press('Enter');
+    await page.pause()
+}
