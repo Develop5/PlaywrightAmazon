@@ -1,8 +1,9 @@
 # PlaywrightAmazon
 
-## 1st Scenario
-    
-Check the product is sold by Amazon
+## Goal
+
+Actually, checking Zalando website
+🥴
 
 ## Steps to prepare the project
 
@@ -49,7 +50,7 @@ Contains all assertion libraries
 Until here, the first commit
 ------------------------------------
 
-Create needed folders, inside E2E
+Create needed folders, inside E2E &ensp;&ensp;&ensp; 🏛️
 
 1. config
     |-> json_payloads
@@ -140,6 +141,9 @@ Create needed folders, inside E2E
 
 
 ## Project editor
+To warrant that cucumber points at step-definitions  &ensp;   &ensp;🛣️
+&ensp;
+
 Settings (left down icon) And then open settings.json (right upper icon)  
 
 {
@@ -150,7 +154,8 @@ Settings (left down icon) And then open settings.json (right upper icon)
 ### How to pause tests
         await page.pause()
 
-### Resources
+## Resources &ensp; 🧰
+
     Duplicate line:     Shift + Alt + Arrow down (Arrow up)
 
     Print URL:          console.log('>>>>>>> Page URL: ' + page.url())
@@ -170,7 +175,7 @@ Customizes which terminal to run on Windows.
 
 
 
-### List of elements
+### Get a list of elements in the page
 ```
 var tags = document.getElementsByTagName("div");
 for (var i=0, max=tags.length; i < max; i++) {
@@ -218,4 +223,147 @@ Depending whether you are in Linux or Windows. (Both work for me)
 Then, 
 Couldn't find preset "@babel/preset-typescript"
     yarn run test
+
+
+-----------------------------------------
+-----------------------------------------
+
+
+## API &ensp; &ensp; 😅
+
+### WIP. I am here. 
+# All steps need to be reviewed
+
+Create a new folder under the mainn react-app and name it api_e2e
+
+Then, go to this folder and:
+```
+    npm init
+```
+And yes (Enter) to all questions
+
+Then,
+
+    npx -p typescript tsc --init
+
+And yes to all.
+This creates the tsconfig.json file
+
+Now,
+
+    yarn add @playwright/test
+
+And then create the "src/tests" folder in react-app/api_e2e
+
+We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
+And we will use the playwright native html reporter instead of cucumber-html-reporter
+
+
+Then, to execute the tests:
+
+    yarn run test
+
+-----
+### API tests with Cucumber ###
+
+Till now we have not used cucumber for API. If you plan to do that, follow these steps.
+
+In the api_e2e folder execute:
+
+    npm install @cucumber/cucumber          (see what happens in package.json)
+
+Next install typescript:
+
+    npm install typescript
+
+If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
+
+
+ts-node is a very popular package in Typescrip world. It allows us to run a test and get results without having to worry about file changes and compilation.
+
+    npm install ts-node
+
+Once this module is installed, we can add scripts in package.json (cucumber, in this case)
+    
+This script indicates where are our features. The ts-node/register inside this script enables us to execute typescript code. Typescript is always compiled to JavaScript on runtime.
+This script also indicates where are the step-definitions.
+
+
+Now, we can execute in our api_e2e folder:
+
+    npm run cucumber
+
+
+Then, we need to have test results segregated, independently of whether we run 1 or more tests at a time, in parallel.
+Cucumber World provides us an isolated context per scenario, exposed to the hooks and steps as this. Enabling you to set and recall some states across the lifecycle of your scenario.
+Cucumber world class is accessible via "this" in scenario before, after, when, given and then steps.
+It is used to store scenario configuration and current browser. 
+Cucumber world enables us to set global configuration for each scenario, meaning all our cucumber scenarios run independently and retain any configuration or variables set before or throughout.
+That is why with this, we can execute scenarios in parallel.
+
+
+Install playwright
+
+    npm install playwright
+
+
+#### ESLint ####
+
+From our folder api_e2e:
+
+    npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+Now create files
+
+    .eslintrc
+    .eslintignore
+And add the corresponding script in package.json, for lint to be executed
+
+    npm run lint
+This can be launched from the command line, from time to time as well, to ensure the code is still clean.
+
+Create cucumber.js, update package.json and install babel
+
+    npm install @babel/core
+    npm install @babel/cli
+    npm install @babel/preset-env
+    npm install @babel/preset-typescript
+
+Create index.ts
+&nbsp;
+And now, the test is executed a little differently
+
+    npm run cucumber -- --profile dev
+
+
+#### Again, environment variable management ####
+
+In the api_e2e folder:
+
+    npm install dotenv
+
+common.env needs to be created
+
+Create files:
+
+    run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
+    run_tests.bat       For Windows
+
+And now tests can be executed through this command: 
+    ./run_tests.sh dev          
+            or
+    ./run_tests.bat dev         
+Depending whethe you are in Linux or Windows. (Both work for me)
+
+
+#### Cucumber reporter ####
+
+Create a folder reporter an a cucumber-report.ts inside it
+
+from api_e2e folder, run:
+
+    npm install cucumber-html-reporter
+
+
+
 
