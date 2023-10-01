@@ -178,6 +178,21 @@ for (var i=0, max=tags.length; i < max; i++) {
 }
 ```
 
+### How to get the full page in text or elements
+```
+For the full html of the page, this is what you need: const html = await page.content()
+
+To get the inner text of the div, this should work: const pageText = await page.innerText('div')
+```
+
+### Highlighting elements (in the devtools console), not by code
+
+```
+document.querySelector('header').style.border = '2em solid green'
+
+Example:
+document.querySelector('[class$="Zhr-fS _9l1hln _65i7kZ"]').style.border = '2em solid green'
+```
 
 
 

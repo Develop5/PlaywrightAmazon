@@ -1,4 +1,6 @@
 {
-    "filter phrase": "[class='sDq_FX qQ75Zg FxZV-M HlZ_Tf CzGCn5']"
+    "filter words": "[class='sDq_FX qQ75Zg FxZV-M HlZ_Tf CzGCn5']",
+    "catalog filters": "[id='collection_view_catalog-filters']",
+    "catalog filter": "[id='collection_view_catalog-filters'] > div"
 
 }

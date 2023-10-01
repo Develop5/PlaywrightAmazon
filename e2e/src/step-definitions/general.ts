@@ -12,5 +12,5 @@ Then(
         logger.log(`I wait ${waitSeconds} seconds`)
         await page.waitForTimeout(parseInt(waitSeconds, 10) * 1000)
     }
-
 )
+
