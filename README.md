@@ -1,4 +1,7 @@
-# PlaywrightAmazon
+## (PlaywrightAmazon) Should be renamed to: &nbsp;
+# PlaywrightZalando 
+
+[Playwright over Selenium or Cypress](https://medium.com/tech-p7s1/why-favor-playwright-over-selenium-or-cypress-e96df84c08e1)
 
 ## Goal
 
