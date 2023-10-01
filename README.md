@@ -194,6 +194,10 @@ Example:
 document.querySelector('[class$="Zhr-fS _9l1hln _65i7kZ"]').style.border = '2em solid green'
 ```
 
+### Note on headless mode
+
+
+[Playwright works in headful mode but fails in headless](https://stackoverflow.com/questions/75488727/playwright-works-in-headful-mode-but-fails-in-headless)
 
 
 ------------------------------------

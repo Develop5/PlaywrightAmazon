@@ -228,5 +228,4 @@ export const pressEnter = async (
     const element = await page.$(`${elementIdentifier}`)
     await page.focus(elementIdentifier)
     await element?.press('Enter');
-    //await page.pause()
 }
