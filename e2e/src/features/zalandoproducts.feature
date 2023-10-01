@@ -11,7 +11,11 @@ Feature: As a user I can interact with cards
         And the "id header" should be displayed
         And I fill in the "id header" input with "Zapatos"
         And I press Enter on "id header" element
-        And I wait "10" seconds
+
+        And I am directed to the "catalogo" page
+        Then the "filter phrase" should be displayed
+        And I wait "5" seconds
+        And the "filter phrase" should contain the text "Zapatos"
 
         #Then I am directed to the "explore" page
         #And the "1st" "category title" should be displayed

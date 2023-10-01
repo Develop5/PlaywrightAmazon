@@ -10,8 +10,6 @@ import { ElementKey } from "../env/global"
 import { pressEnter } from "../support/keyboard-helper"
 import { logger } from "../logger"
 
-// Next: Add elementKey and enable all needed inputs
-
 
 Then (
     /^I press Enter on "([^"]*)" element$/,

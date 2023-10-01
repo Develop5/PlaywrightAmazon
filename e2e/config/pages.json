@@ -6,5 +6,9 @@
     "home": {
         "route" : "/",
         "regex" : "^/$"
+    },
+    "catalogo": {
+        "route" : "/catalogo",
+        "regex" : "^/catalogo"
     }
 }
