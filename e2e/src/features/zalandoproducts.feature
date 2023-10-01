@@ -52,8 +52,6 @@ Feature: As a user I can interact with cards
         And the "12th" "catalog filter" should be displayed
         And the "12th" "catalog filter" should contain the text "Mostrar más filtros"
 
-
-
         #And I wait "10" seconds
 
 

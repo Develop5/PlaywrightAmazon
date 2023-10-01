@@ -564,9 +564,6 @@ var pressEnter = /*#__PURE__*/function () {
           _context26.next = 7;
           return element === null || element === void 0 ? void 0 : element.press('Enter');
         case 7:
-          _context26.next = 9;
-          return page.pause();
-        case 9:
         case "end":
           return _context26.stop();
       }
