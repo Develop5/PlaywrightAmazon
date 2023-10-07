@@ -286,9 +286,7 @@ This script indicates where are our features. The ts-node/register inside this s
 This script also indicates where are the step-definitions.
 
 
-Now, we can execute in our api_e2e folder:
 
-    npm run cucumber
 
 
 Then, we need to have test results segregated, independently of whether we run 1 or more tests at a time, in parallel.
@@ -297,6 +295,13 @@ Cucumber world class is accessible via "this" in scenario before, after, when, g
 It is used to store scenario configuration and current browser. 
 Cucumber world enables us to set global configuration for each scenario, meaning all our cucumber scenarios run independently and retain any configuration or variables set before or throughout.
 That is why with this, we can execute scenarios in parallel.
+
+
+Review this section because I do not know where it should go:
+
+Now, we can execute in our api_e2e folder:
+
+    npm run cucumber
 
 
 Install playwright
