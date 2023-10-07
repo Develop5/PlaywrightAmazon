@@ -255,7 +255,7 @@ Now,
 
     yarn add @playwright/test
 
-And then create the "src/tests" folder in react-app/api_e2e
+And then create the "src/tests" folder in the main /api_e2e
 
 We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
 And we will use the playwright native html reporter instead of cucumber-html-reporter
