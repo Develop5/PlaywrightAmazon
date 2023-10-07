@@ -291,7 +291,7 @@ By now, I am executing:
     
 Or:
     npm run cucumber -- --profile dev
-    
+
 
 Then, to execute the tests:
 
@@ -344,8 +344,8 @@ From our folder api_e2e:
 
 Now create files 
 
-    .eslintrc               (Not created by now. Not necessary but possible to be used)
-    .eslintignore           (Not created by now. Not necessary but possible to be used)
+    .eslintrc               
+    .eslintignore           
 And add the corresponding script in package.json, for lint to be executed
 
 Later, when it needs to be executed, to check the code:
@@ -353,7 +353,7 @@ Later, when it needs to be executed, to check the code:
 This can be launched from the command line, from time to time as well, to ensure the code is still clean.
 
 Create cucumber.js      (I have copied the cucumber.js file from the e2e folder to here)     
-Update package.json (I have copied the block "script" from the e2e project, to here)
+Update package.json     (Copy the script block from another api_e2e project, to here)
 and install babel
 
     npm install @babel/core
