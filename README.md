@@ -261,11 +261,6 @@ We are not going to use Cucumber for the API suite,therefore we will use tsconfi
 And we will use the playwright native html reporter instead of cucumber-html-reporter
 
 
-Then, to execute the tests:
-
-    yarn run test
-
------
 ### API tests with Cucumber ###
 
 Till now we have not used cucumber for API. If you plan to do that, follow these steps.
@@ -308,6 +303,15 @@ Install playwright
 
     npm install playwright
 
+
+...
+I do not know where this section will go, yet
+
+Then, to execute the tests:
+
+    yarn run test
+
+-----
 
 #### ESLint ####
 
