@@ -8,7 +8,7 @@ import {
     GlobalConfig,
     JsonPayloadMappings
 } from './env/global'
-import * as fs from "fs";
+import * as fs from "fs"
 
 dotenv.config( {path: env('COMMON_CONFIG_FILE')} )
 

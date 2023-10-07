@@ -267,6 +267,12 @@ Then,
 And yes to all      (No question popped up in my case)
 This creates the tsconfig.json file
 
+
+Install playwright
+
+    npm install playwright
+
+
 Now,
 
     yarn add @playwright/test
@@ -406,10 +412,6 @@ Now, we can execute in our api_e2e folder:
 
     npm run cucumber
 
-
-Install playwright
-
-    npm install playwright
 
 
 ...
