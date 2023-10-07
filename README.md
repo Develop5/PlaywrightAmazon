@@ -288,7 +288,6 @@ This script also indicates where are the step-definitions.
 
 
 
-
 Then, we need to have test results segregated, independently of whether we run 1 or more tests at a time, in parallel.
 Cucumber World provides us an isolated context per scenario, exposed to the hooks and steps as this. Enabling you to set and recall some states across the lifecycle of your scenario.
 Cucumber world class is accessible via "this" in scenario before, after, when, given and then steps.
@@ -297,26 +296,6 @@ Cucumber world enables us to set global configuration for each scenario, meaning
 That is why with this, we can execute scenarios in parallel.
 
 
-Review this section because I do not know where it should go:
-
-Now, we can execute in our api_e2e folder:
-
-    npm run cucumber
-
-
-Install playwright
-
-    npm install playwright
-
-
-...
-I do not know where this section will go, yet
-
-Then, to execute the tests:
-
-    yarn run test
-
------
 
 #### ESLint ####
 
@@ -324,16 +303,19 @@ From our folder api_e2e:
 
     npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
-Now create files
+Now create files 
 
-    .eslintrc
-    .eslintignore
+    .eslintrc               (Not created by now. Not necessary but possible to be used)
+    .eslintignore           (Not created by now. Not necessary but possible to be used)
 And add the corresponding script in package.json, for lint to be executed
 
+Later, when it needs to be executed, to check the code:
     npm run lint
 This can be launched from the command line, from time to time as well, to ensure the code is still clean.
 
-Create cucumber.js, update package.json and install babel
+Create cucumber.js      (I have copied the cucumber.js file from the e2e folder to here)     
+Update package.json (I have copied the block "script" from the e2e project, to here)
+and install babel
 
     npm install @babel/core
     npm install @babel/cli
@@ -378,3 +360,24 @@ from api_e2e folder, run:
 
 
 
+
+Review this section because I do not know where it should go:
+
+Now, we can execute in our api_e2e folder:
+
+    npm run cucumber
+
+
+Install playwright
+
+    npm install playwright
+
+
+...
+I do not know where this section will go, yet
+
+Then, to execute the tests:
+
+    yarn run test
+
+-----

@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber": "yarn transpile &&  cucumber-js",
+    "cucumber:localhost": "yarn cucumber",
+    "cucumber:production": "yarn cucumber",
+    "comment_postcucumber": "ts-node ./src/reporter/cucumber-report.ts",
+    "postcucumber": "ts-node ./src/reporter/cucumber-report.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-typescript": "^7.23.0",
     "@cucumber/cucumber": "^9.6.0",
     "@playwright/test": "^1.38.1",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
