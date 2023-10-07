@@ -1,7 +1,23 @@
 ## (PlaywrightAmazon) Should be renamed to: &nbsp;
 # PlaywrightZalando 
+### for website
+
+### for API: 
+https://jsonplaceholder.typicode.com/
+
+&nbsp;
+### Another option for API: 
+https://retool.com/api-generator/
+
+    Endpoint:
+    https://retoolapi.dev/OmoYKT/data
+
+#### I know how to generate data in this last one, but not how to work with them, yet
+
 
 [Playwright over Selenium or Cypress](https://medium.com/tech-p7s1/why-favor-playwright-over-selenium-or-cypress-e96df84c08e1)
+
+&nbsp;
 
 ## Goal
 
@@ -256,9 +272,24 @@ Now,
     yarn add @playwright/test
 
 And then create the "src/tests" folder in the main /api_e2e
+Create the folder "config" under api_e2e and add here a file hosts.json with the localhost and production urls.
+
 
 We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
 And we will use the playwright native html reporter instead of cucumber-html-reporter
+
+
+WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
+
+Create your tests as .ts files under the src/tests folder
+For example GET.test.ts
+
+
+Then, to execute the tests:
+
+    yarn run test
+
+-----
 
 
 ### API tests with Cucumber ###
@@ -335,9 +366,9 @@ In the api_e2e folder:
 
     npm install dotenv
 
-common.env needs to be created
+common.env needs to be created          (I have copied it from the e2e folder)
 
-Create files:
+Create files:                           (By now, copied from the e2e folder)
 
     run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
     run_tests.bat       For Windows
