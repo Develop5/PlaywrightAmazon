@@ -322,11 +322,11 @@ and install babel
     npm install @babel/preset-env
     npm install @babel/preset-typescript
 
-Create index.ts
+Create index.ts in the src folder
 &nbsp;
 And now, the test is executed a little differently
 
-    npm run cucumber -- --profile dev
+    npm run cucumber -- --profile dev       (  ⚠️⚠️⚠️ There are no tests yet, so this does not work)
 
 
 #### Again, environment variable management ####
