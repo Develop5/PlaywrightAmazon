@@ -234,22 +234,21 @@ Couldn't find preset "@babel/preset-typescript"
 
 ## API &ensp; &ensp; 😅
 
-### WIP. I am here. 
+### WIP. I am here. &ensp; &ensp;  💦
 # All steps need to be reviewed
 
-Create a new folder under the mainn react-app and name it api_e2e
+Create a new folder under the main and name it api_e2e
 
 Then, go to this folder and:
 ```
-    npm init
+    npm init -y
 ```
-And yes (Enter) to all questions
 
 Then,
 
     npx -p typescript tsc --init
 
-And yes to all.
+And yes to all      (No question popped up in my case)
 This creates the tsconfig.json file
 
 Now,
