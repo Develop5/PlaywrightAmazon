@@ -278,12 +278,20 @@ Create the folder "config" under api_e2e and add here a file hosts.json with the
 We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
 And we will use the playwright native html reporter instead of cucumber-html-reporter
 
-
-WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
-
 Create your tests as .ts files under the src/tests folder
 For example GET.test.ts
 
+
+WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
+
+
+By now, I am executing:  
+    npx playwright test
+
+    
+Or:
+    npm run cucumber -- --profile dev
+    
 
 Then, to execute the tests:
 
