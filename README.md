@@ -281,20 +281,33 @@ And then create the "src/tests" folder in the main /api_e2e
 Create the folder "config" under api_e2e and add here a file hosts.json with the localhost and production urls.
 
 
-We are not going to use Cucumber for the API suite,therefore we will use tsconfig.json
+We are NOT going to use Cucumber for the API suite,therefore we will use tsconfig.json
 And we will use the playwright native html reporter instead of cucumber-html-reporter
 
 Create your tests as .ts files under the src/tests folder
 For example GET.test.ts
 
+If there is a problem with process in index.ts (Cannot find name 'process')
+    yarn add -D @types/node
 
+Create a file playwright.config.js under api_e2e
+This file contains the baseUrl and headers for API testing
+
+
+You can execute your tests by typing in the command line from api_e2e folder:  
+    npx playwright test
+
+    Or:
+    yarn run test
+
+    Which similar to:
+    "test": "npx playwright test --reporter=html"
+
+    
 WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
 
 
-By now, I am executing:  
-    npx playwright test
 
-    
 Or:
     npm run cucumber -- --profile dev
 
