@@ -406,11 +406,6 @@ And now, the test is executed a little differently
     yarn cucumber --tags @tagname       (For example: yarn cucumber --tags @dev)
 
 
-### WIP. I am here. &ensp; &ensp;  💦
-WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
-
-
-
 #### Again, environment variable management ####
 
 In the api_e2e folder:
