@@ -19,7 +19,7 @@ test('retrieve 1st post and check id', async ({ request }) => {
 })
 
 
-test('retrieve 5th post and check id', async ({ request }) => {
+test('retrieve the 5th post and check id', async ({ request }) => {
     const response = await request.get('/posts/5')
     expect(response.ok()).toBeTruthy()
     expect(response.status()).toBe(200)

@@ -197,6 +197,10 @@ Customizes which terminal to run on Windows.
 
 
 
+Looks like this runs here or it is only for the e2e testing (not API)
+    npm run cucumber -- --profile dev       
+
+
 ### Get a list of elements in the page
 ```
 var tags = document.getElementsByTagName("div");
@@ -291,7 +295,7 @@ Create your tests as .ts files under the src/tests folder
 For example GET.test.ts
 
 If there is a problem with process in index.ts (Cannot find name 'process')
-    yarn add -D @types/node
+    yarn add -D @types/node                 (It can be removed later)
 
 Create a file playwright.config.js under api_e2e
 This file contains the baseUrl and headers for API testing
@@ -307,11 +311,6 @@ You can execute your tests by typing in the command line from api_e2e folder:
     "test": "npx playwright test --reporter=html"
 
 
-
-Or:
-    npm run cucumber -- --profile dev
-
-
 Then, to execute the tests:
 
     yarn run test
@@ -321,11 +320,6 @@ And then, to see the report:
     yarn playwright show-report
 
 -----
-
-
-### WIP. I am here. &ensp; &ensp;  💦
-WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
-
 
 
 ### API tests with Cucumber ###
@@ -343,7 +337,7 @@ Next install typescript:
 If you have not done it by now, you need to create the tsconfig.json (npx -p typescript tsc --init). In this project particularly it was done before.
 
 
-ts-node is a very popular package in Typescrip world. It allows us to run a test and get results without having to worry about file changes and compilation.
+ts-node is a very popular package in Typescript world. It allows us to run a test and get results without having to worry about file changes and compilation.
 
     npm install ts-node
 
@@ -393,7 +387,12 @@ Create index.ts in the src folder
 &nbsp;
 And now, the test is executed a little differently
 
-    npm run cucumber -- --profile dev       (  ⚠️⚠️⚠️ There are no tests yet, so this does not work)
+    yarn cucumber --tags @tagname       (For example: yarn cucumber --tags @dev)
+
+
+### WIP. I am here. &ensp; &ensp;  💦
+WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
+
 
 
 #### Again, environment variable management ####

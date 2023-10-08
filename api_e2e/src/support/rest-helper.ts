@@ -11,14 +11,11 @@ export const getResponse = async (
 ): Promise<APIResponse> => {
 
     const url = retrieveHostURL(globalConfig)
-    console.log(`>>>>>  Lourdes: URL 🧨  ${url} 🧨`)
-    console.log(`>>>>>  Lourdes: URL 🧨  ${url} 🧨`)
-    console.log(`>>>>>  Lourdes: URL 🧨  ${url} 🧨`)
-
+    
     const response = await request.get(url.href+route)
-
+    
     globalAPIResponseVariables.response = response
-
+    
     return response
 }
 
