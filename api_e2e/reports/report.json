@@ -4,6 +4,107 @@
     "elements": [
       {
         "description": "",
+        "id": "as-an-api-i-can-delete-posts;as-an-api-i-can-delete-a-specific-posts",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As an API I can delete a specific posts",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 76205799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I delete the 1st \"posts\"",
+            "match": {
+              "location": "src\\step-definitions\\delete-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416799899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8313400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3117900
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "{}"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10676699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-delete-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can delete posts",
+    "tags": [],
+    "uri": "src\\features\\DELETE.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-all-the-posts",
         "keyword": "Scenario",
         "line": 6,
@@ -14,7 +115,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 94350099
+              "duration": 4422800
             }
           },
           {
@@ -27,7 +128,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 281859499
+              "duration": 114683300
             }
           },
           {
@@ -40,7 +141,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7460299
+              "duration": 18490999
             }
           },
           {
@@ -53,7 +154,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3431300
+              "duration": 5806300
             }
           }
         ],
@@ -72,6 +173,170 @@
           }
         ],
         "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-can-retrieve-a-simple-post",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "As an API I can retrieve a simple post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4495900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I retrieve the 1st \"posts\"",
+            "match": {
+              "location": "src\\step-definitions\\get-steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79179900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7214100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1805999
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "id",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "userId",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30874100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 11
+          },
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-an-api-i-can-retrieve-posts;as-an-api-i-cannot-retrieve-animals",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "As an API I cannot retrieve animals",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4501500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I retrieve \"animals\"",
+            "match": {
+              "location": "src\\step-definitions\\get-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88114400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the response was unsuccessful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1554099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the response status code is 404",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9919700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 22
+          },
+          {
+            "name": "@regression",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
       }
     ],
     "id": "as-an-api-i-can-retrieve-posts",
@@ -80,5 +345,431 @@
     "name": "As an API I can retrieve posts",
     "tags": [],
     "uri": "src\\features\\GET.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-api-i-can-edit-posts;as-an-api-i-can-edit-a-post",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As an API I can edit a post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3974399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I patch the 1st \"posts\" with an \"new title\"",
+            "match": {
+              "location": "src\\step-definitions\\patch-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225518399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2740299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9747699
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "id",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "userId",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "id",
+                      "Just an edited title"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6589999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-edit-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can edit posts",
+    "tags": [],
+    "uri": "src\\features\\PATCH.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-api-i-can-create-posts;as-an-api-i-can-create-a-new-post",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As an API I can create a new post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4647400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I create a new \"posts\" with \"new post\"",
+            "match": {
+              "location": "src\\step-definitions\\post-steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292718200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6284100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status code is 201",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10507899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "id",
+                      "101"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "userId",
+                      "1"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "title",
+                      "New Post"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "body",
+                      "This is a new post"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27910799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-create-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can create posts",
+    "tags": [],
+    "uri": "src\\features\\POST.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-api-i-can-update-posts;as-an-api-i-can-update-a-specific-post",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "As an API I can update a specific post",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4338400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I update the 1st \"posts\" with an \"updated post\"",
+            "match": {
+              "location": "src\\step-definitions\\put-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248515100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response was successful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7016499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status code is 200",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2093500
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "id",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the response json contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11468699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "as-an-api-i-can-update-posts;asan-api-i-can-not-update-a-post-that-does-not-exist",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Asan API I can not update a post that does not exist",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4048099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I update the 200th \"posts\" with an \"updated post\"",
+            "match": {
+              "location": "src\\step-definitions\\put-steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283132599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the response was unsuccessful",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3320900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the response status code is 500",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2202299
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Cannot read properties of undefined (reading 'id')"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the response text contains the attributes:",
+            "match": {
+              "location": "src\\step-definitions\\assertions\\response-steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10973199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 16
+          },
+          {
+            "name": "@regression",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-api-i-can-update-posts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an API I can update posts",
+    "tags": [],
+    "uri": "src\\features\\PUT.feature"
   }
 ]
