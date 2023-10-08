@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts",
-    "test": "rimraf dist && npx playwright test --reporter=html",
+    "test": "npx playwright test --reporter=html",
     "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
     "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
-    "cucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts",
+    "cucumber": "npm run transpile && cucumber-js",
     "postcucumber": "ts-node ./src/reporter/cucumber-report.ts"
   },
   "keywords": [],
@@ -29,5 +29,8 @@
     "playwright": "^1.38.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.3"
   }
 }

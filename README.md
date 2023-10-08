@@ -183,6 +183,8 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
     Pretty print JSON:      console.log(JSON.stringify(object, null, 2))
 
+    Dynamite print:      console.log(`🧨  >>>>>>>>>>> Lourdes, nameOfKey   ${key}  🧨 `)
+
 
     Add emojis:         Windows + .
 
@@ -294,7 +296,7 @@ And we will use the playwright native html reporter instead of cucumber-html-rep
 Create your tests as .ts files under the src/tests folder
 For example GET.test.ts
 
-If there is a problem with process in index.ts (Cannot find name 'process')
+Every time there is a problem with process.env in index.ts (Cannot find name 'process')
     yarn add -D @types/node                 (It can be removed later)
 
 Create a file playwright.config.js under api_e2e
@@ -323,6 +325,8 @@ And then, to see the report:
 
 
 ### API tests with Cucumber ###
+
+## Be careful. Once you configure for Cucumber, tne normal yarn test will not work anymore
 
 Till now we have not used cucumber for API. If you plan to do that, follow these steps.
 
@@ -385,6 +389,18 @@ and install babel
 
 Create index.ts in the src folder
 &nbsp;
+
+#### Cucumber reporter ####
+
+Create a folder reporter in scr and add file cucumber-report.ts (Copy the file from any other cucumber project)
+
+from api_e2e folder, run:
+
+    npm install cucumber-html-reporter
+    yarn add cucumber-html-reporter
+
+--------------
+
 And now, the test is executed a little differently
 
     yarn cucumber --tags @tagname       (For example: yarn cucumber --tags @dev)
@@ -412,16 +428,10 @@ And now tests can be executed through this command:
     ./run_tests.sh dev          
             or
     ./run_tests.bat dev         
-Depending whethe you are in Linux or Windows. (Both work for me)
+Depending whether you are in Linux or Windows. (Both work for me)
 
+Must be executed from those scripts because only there the COMMON_CONFIG_FILE varible is set
 
-#### Cucumber reporter ####
-
-Create a folder reporter an a cucumber-report.ts inside it
-
-from api_e2e folder, run:
-
-    npm install cucumber-html-reporter
 
 
 
