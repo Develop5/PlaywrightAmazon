@@ -371,23 +371,6 @@ That is why with this, we can execute scenarios in parallel.
 
 
 
-#### ESLint ####
-
-From our folder api_e2e:
-
-    npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
-
-Now create files 
-
-    .eslintrc               
-    .eslintignore           
-And add the corresponding script in package.json, for lint to be executed
-
-Later, when it needs to be executed, to check the code:
-
-    npm run lint
-This can be launched from the command line, from time to time as well, to ensure the code is still clean.
-
 Create cucumber.js      (I have copied the cucumber.js file from the e2e folder to here)     
 Update package.json     (Copy the script block from another api_e2e project, to here)
 and install babel
@@ -439,7 +422,28 @@ When the test is run from here, the dynamite or any other emojies are seen.
 
 Must be executed from those scripts because only there the COMMON_CONFIG_FILE variable is set
 
-## Execution of api_e2e
+
+
+
+#### ESLint ####
+
+From our folder api_e2e:
+
+    npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+Now create files 
+
+    .eslintrc               
+    .eslintignore           
+And add the corresponding script in package.json, for lint to be executed
+
+Later, when it needs to be executed, to check the code:
+
+    npm run lint
+This can be launched from the command line, from time to time as well, to ensure the code is still clean.
+
+
+## Finally, execution of api_e2e
 
 Once everything is in place, api tests can be executed 2 ways:
 
@@ -447,7 +451,7 @@ Once everything is in place, api tests can be executed 2 ways:
 
     For tests not in Cucumber
     
-    
+
 
     2. ./run_tests.sh dev 
 
