@@ -419,11 +419,12 @@ Create files:                           (By now, copied from the e2e folder)
     run_tests.sh        (And provide permission: chmod +x ./run_tests.sh) for Linux, Mac
     run_tests.bat       For Windows
 
-And now tests can be executed through this command: 
+And now cucumber tests can be executed through this command: 
     ./run_tests.sh dev          
             or
     ./run_tests.bat dev         
 Depending whether you are in Linux or Windows. (Both work for me)
+When the test is run from here, the dynamite or any other emojies are seen.
 
 Must be executed from those scripts because only there the COMMON_CONFIG_FILE varible is set
 
