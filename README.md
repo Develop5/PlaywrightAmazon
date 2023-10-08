@@ -181,6 +181,9 @@ Settings (left down icon) And then open settings.json (right upper icon)
 
     Locators in array:      $('[class="big-number chapter"]')[0]
 
+    Pretty print JSON:      console.log(JSON.stringify(object, null, 2))
+
+
     Add emojis:         Windows + .
 
     In VS Code Integrated Terminal, type command: chcp 65001
@@ -250,7 +253,7 @@ Couldn't find preset "@babel/preset-typescript"
 
 ## API &ensp; &ensp; 😅
 
-### WIP. I am here. &ensp; &ensp;  💦
+
 # All steps need to be reviewed
 
 Create a new folder under the main and name it api_e2e
@@ -303,9 +306,6 @@ You can execute your tests by typing in the command line from api_e2e folder:
     Which similar to:
     "test": "npx playwright test --reporter=html"
 
-    
-WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
-
 
 
 Or:
@@ -316,7 +316,16 @@ Then, to execute the tests:
 
     yarn run test
 
+And then, to see the report:
+
+    yarn playwright show-report
+
 -----
+
+
+### WIP. I am here. &ensp; &ensp;  💦
+WIP 💃💃💃💃💃💃💃💃💃💃💃💃  I am here  (Before any commands to run tests) 
+
 
 
 ### API tests with Cucumber ###
