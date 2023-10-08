@@ -61,3 +61,12 @@ test('listing all albums (100)', async ({ request }) => {
     expect(await response.json()).toHaveLength(100)
 })
 
+
+
+test('Negative case: Total amount of albums should not be 200)', async ({ request }) => {
+    const response = await request.get('/albums')
+    expect(response.ok()).toBeTruthy()
+    expect(response.status()).toBe(200)
+    expect(await response.json()).not.toHaveLength(200)
+})
+
