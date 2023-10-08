@@ -1,12 +1,14 @@
 ## (PlaywrightAmazon) Should be renamed to: &nbsp;
 # PlaywrightZalando 
-### for website
+### website
+https://www.zalando.es/
 
-### for API: 
+
+### API: 
 https://jsonplaceholder.typicode.com/
 
 &nbsp;
-### Another option for API: 
+### Another option for API (future, not used here): 
 https://retool.com/api-generator/
 
     Endpoint:
@@ -235,7 +237,7 @@ document.querySelector('[class$="Zhr-fS _9l1hln _65i7kZ"]').style.border = '2em 
 
 ------------------------------------
 
-## Execute tests:
+## Execute tests (for website):
 
 Tests can be executed through this command from e2e folder: 
     ./run_tests.sh localhost dev       (or production, and regression or smoke)          
@@ -259,8 +261,6 @@ Couldn't find preset "@babel/preset-typescript"
 
 ## API &ensp; &ensp; 😅
 
-
-# All steps need to be reviewed
 
 Create a new folder under the main and name it api_e2e
 
@@ -296,20 +296,25 @@ And we will use the playwright native html reporter instead of cucumber-html-rep
 Create your tests as .ts files under the src/tests folder
 For example GET.test.ts
 
-Every time there is a problem with process.env in index.ts (Cannot find name 'process')
+Frequent issue 😓: Every time there is a problem with process.env in index.ts (Cannot find name 'process')
+
     yarn add -D @types/node                 (It can be removed later)
 
 Create a file playwright.config.js under api_e2e
 This file contains the baseUrl and headers for API testing
 
 
-You can execute your tests by typing in the command line from api_e2e folder:  
+You can execute your tests by typing in the command line from api_e2e folder: 
+
     npx playwright test
 
-    Or:
+Or:
+    
     yarn run test
 
-    Which similar to:
+    
+Which similar to:
+
     "test": "npx playwright test --reporter=html"
 
 
@@ -317,7 +322,7 @@ Then, to execute the tests:
 
     yarn run test
 
-And then, to see the report:
+And to see the report:
 
     yarn playwright show-report
 
@@ -326,7 +331,6 @@ And then, to see the report:
 
 ### API tests with Cucumber ###
 
-## Be careful. Once you configure for Cucumber, tne normal yarn test will not work anymore
 
 Till now we have not used cucumber for API. If you plan to do that, follow these steps.
 
@@ -348,6 +352,7 @@ ts-node is a very popular package in Typescript world. It allows us to run a tes
 Once this module is installed, we can add scripts in package.json (cucumber, in this case)
     
 This script indicates where are our features. The ts-node/register inside this script enables us to execute typescript code. Typescript is always compiled to JavaScript on runtime.
+
 This script also indicates where are the step-definitions.
 
 
@@ -355,9 +360,13 @@ This script also indicates where are the step-definitions.
 
 Then, we need to have test results segregated, independently of whether we run 1 or more tests at a time, in parallel.
 Cucumber World provides us an isolated context per scenario, exposed to the hooks and steps as this. Enabling you to set and recall some states across the lifecycle of your scenario.
+
 Cucumber world class is accessible via "this" in scenario before, after, when, given and then steps.
+
 It is used to store scenario configuration and current browser. 
+
 Cucumber world enables us to set global configuration for each scenario, meaning all our cucumber scenarios run independently and retain any configuration or variables set before or throughout.
+
 That is why with this, we can execute scenarios in parallel.
 
 
@@ -375,6 +384,7 @@ Now create files
 And add the corresponding script in package.json, for lint to be executed
 
 Later, when it needs to be executed, to check the code:
+
     npm run lint
 This can be launched from the command line, from time to time as well, to ensure the code is still clean.
 
@@ -406,6 +416,7 @@ And now, the test is executed a little differently
     yarn cucumber --tags @tagname       (For example: yarn cucumber --tags @dev)
 
 
+
 #### Again, environment variable management ####
 
 In the api_e2e folder:
@@ -426,26 +437,30 @@ And now cucumber tests can be executed through this command:
 Depending whether you are in Linux or Windows. (Both work for me)
 When the test is run from here, the dynamite or any other emojies are seen.
 
-Must be executed from those scripts because only there the COMMON_CONFIG_FILE varible is set
+Must be executed from those scripts because only there the COMMON_CONFIG_FILE variable is set
+
+## Execution of api_e2e
+
+Once everything is in place, api tests can be executed 2 ways:
+
+    1. yarn test    
+
+    For tests not in Cucumber
+    
+    
+
+    2. ./run_tests.sh dev 
+
+    For tests in Cucumber
+    "dev" refers to the tag (@dev) labelling specific scenarios. Could be also "smoke" or "regression" (the last one execute all)
+
+
+&nbsp;
+
+For both, the report can be seen following the instructions at the end of the execution.
 
 
 
 
 
 
-Review this section because I do not know where it should go:
-
-Now, we can execute in our api_e2e folder:
-
-    npm run cucumber
-
-
-
-...
-I do not know where this section will go, yet
-
-Then, to execute the tests:
-
-    yarn run test
-
------
